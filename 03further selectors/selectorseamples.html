@@ -5,10 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        div {
+            background-color: aquamarine;
+            border: 1px solid blue;
+            padding: 1rem;
+            margin: 1rem;
+        }
+        div p {
+            color: rgb(0, 128, 0);
+        }
+        div div p {
+            color: yellowgreen;
+        }
+        .bold {
+            color: brown;
+        }
+        #special {
+            font-family: 'Courier New', Courier, monospace;
+        }
         
     </style>
 </head>
 <body>
     
+    <p class="bold hightlight">This is a red paragraph</p>
+
+    <div>
+
+        <p id="special" class="hightlight">This is a green paragraph</p>
+        <div>
+            <p class="bold">This is a nested paragraph</p>
+        </div>
+    </div>
 </body>
 </html>
