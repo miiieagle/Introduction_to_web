@@ -5,7 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .box {
+        body {
+            background: linear-gradient(0deg, blue, transparent);
+            min-height: 140vh;
+        }
+
+        .box, .bushCircle {
             background-color: aqua;
             border: 3px solid blue;
             min-height: 50px;
@@ -15,13 +20,62 @@
             border-radius: 50%;
             width: 100px;
             aspect-ratio: 1;
+            position: absolute;
+            top: 50px;
         }
-        #bush {}
+        #bush {
+            border-radius: 2rem;
+            width: 30%;
+            position: absolute;
+            top: 600px;
+            left: 698px
+        }
+        
+        #ground {
+            position: absolute;
+            bottom: 0%;
+            width: 100%;
+        }
+
+        .bushCircle {
+            border-radius: 50%;
+            aspect-ratio: 1;
+            position: absolute;
+        }
+        .bushCircle:nth-child(4) {
+            width: 108px;
+            right: -19px;
+            top: -57px;
+        }
+
+        .bushCircle:nth-child(3) {
+            width: 167px;
+            right: 85px;
+            top: -120px;
+        }
+
+        .bushCircle:nth-child(2) {
+            width: 111px;
+            right: 214px;
+            top: -75px;
+        }
+        
+        .bushCircle:nth-child(1) {
+            width: 89px;
+            right: 293px;
+            top: -44px;
+        }
+
     </style>
 </head>
 <body>
     <div id="sun" class="box"></div>
-    <div id="bush" class="box"></div>
+    <div id="bush" class="box">
+        <div class="bushCircle"></div>
+        <div class="bushCircle"></div>
+        <div class="bushCircle"></div>
+        <div class="bushCircle"></div>
+    </div>
     <div id="ground" class="box"></div>
 </body>
 </html>
