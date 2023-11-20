@@ -8,15 +8,17 @@
 </head>
 <body>
     <h1 id="mainTitle">Rock, Paper, Scissors</h1>
+    <h2 id="scorePlaceholder">Player 0 - 0 computer</h2>
     <div class="imageWrap">
         <img id="playerHand" src="rock.png" alt="player's Hand">
         <img id="computerHand" src="rock.png" alt="computer's Hand">
     </div>
 <h2 id="result">Choose a hand</h2>
     <div class="buttonWrap">
-        <button>Rock</button>
-        <button>Paper</button>
-        <button>Scissors</button>
+        <button onclick="game('rock')">Rock</button>
+        <button onclick="game('paper')">Paper</button>
+        <button onclick="game('scissors')">Scissors</button>
     </div>
+    <script src="myscript.js"></script>
 </body>
 </html>
